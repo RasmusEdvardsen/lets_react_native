@@ -1,10 +1,15 @@
+import { Stack } from "expo-router";
 import { Text, View, StyleSheet } from "react-native";
 
 export default function GroupPage() {
   return (
-    <View style={styles.container}>
-      <Text>Group Page</Text>
-    </View>
+    <>
+      <Stack.Screen options={{ title: "Group" }} />
+
+      <View style={styles.container}>
+        <Text>Group Page</Text>
+      </View>
+    </>
   );
 }
 

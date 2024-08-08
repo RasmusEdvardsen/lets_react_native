@@ -1,15 +1,19 @@
-import { Href, Link } from 'expo-router';
+import { Href, Link, Stack } from 'expo-router';
 import { View, Text, StyleSheet } from 'react-native';
 
 export default function HomePage() {
   return (
-    <View style={styles.container}>
-      <Text>Home page.</Text>
+    <>
+      <Stack.Screen options={{ title: "Home" }} />
 
-      <Link href={"/home/group" as Href} style={{ marginTop: 16 }}>
-        <Text style={{ fontWeight: "bold" }}>Go to group page</Text>
-      </Link>
-    </View>
+      <View style={styles.container}>
+        <Text>Home page.</Text>
+
+        <Link href={"/home/group" as Href} style={{ marginTop: 16 }}>
+          <Text style={{ fontWeight: "bold" }}>Go to group page</Text>
+        </Link>
+      </View>
+    </>
   );
 }
 

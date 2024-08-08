@@ -1,10 +1,15 @@
+import { Stack } from "expo-router";
 import { Text, View, StyleSheet } from "react-native";
 
 export default function FriendPage() {
   return (
-    <View style={styles.container}>
-      <Text>Friend Page</Text>
-    </View>
+    <>
+      <Stack.Screen options={{ title: "Friend" }} />
+      
+      <View style={styles.container}>
+        <Text>Friend Page</Text>
+      </View>
+    </>
   );
 }
 
