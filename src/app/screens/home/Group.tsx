@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from "react-native";
 
-export default function FriendsPage() {
+export default function Group() {
   return (
     <View style={styles.container}>
-      <Text>Friends page.</Text>
+      <Text>Group Page</Text>
     </View>
   );
 }

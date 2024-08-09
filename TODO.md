@@ -7,3 +7,4 @@
 * Try run on android and iOS devices
     - Try get android phone and also get mac to run on both devices.
 * Try to declutter expo and eas as much as possible (try minimal template and copy in to repo).
+* Annotate { navigation } with type other than any.

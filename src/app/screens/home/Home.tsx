@@ -1,9 +1,10 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 
-export default function HomePage() {
+export default function Home({ navigation }: any) {
   return (
     <View style={styles.container}>
       <Text>Home Page</Text>
+      <Button title="Go to Group" onPress={() => navigation.navigate('Group')} />
     </View>
   );
 }
@@ -14,4 +15,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-});
+})
