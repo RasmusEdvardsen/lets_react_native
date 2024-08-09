@@ -5,3 +5,4 @@
 * Implement group page navigation with expo-router (top bar navigation with map, chat and maybe participants).
 * Implement login page (and redirecting to login page if not logged in).
 * Figure out if we need those _layout.tsx files.
+* Try run on android and iOS devices
