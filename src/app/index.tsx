@@ -1,5 +1,4 @@
-import { Href, Redirect } from 'expo-router';
+import { registerRootComponent } from 'expo';
+import App from "./app";
 
-export default function Page() {
-  return <Redirect href={"/home" as Href} />;
-}
+registerRootComponent(App);
