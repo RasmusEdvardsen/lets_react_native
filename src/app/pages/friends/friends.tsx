@@ -1,9 +1,9 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function Login() {
+export default function FriendsPage() {
   return (
     <View style={styles.container}>
-      <Text>Login/Signup.</Text>
+      <Text>Friends page.</Text>
     </View>
   );
 }
@@ -11,7 +11,6 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
