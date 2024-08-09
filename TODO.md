@@ -2,7 +2,7 @@
 * Do full UI design before integrating to firebase/supabase, and geo.
     - Use dummy data and timeouts to mock changes to subscribe to.
 * Redux for state management? Look in state management immediately after UI design done.
-* Implement group page navigation with expo-router (top bar navigation with map, chat and maybe participants).
+* Implement chat page and map page (need android phone for map page).
 * Implement login page (and redirecting to login page if not logged in).
 * Try run on android and iOS devices
     - Try get android phone and also get mac to run on both devices.
