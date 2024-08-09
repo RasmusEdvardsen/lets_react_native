@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
+import * as Location from 'expo-location';
 
 import Friends from './screens/friends/Friends';
 import Profile from './screens/friends/Profile';
@@ -29,7 +31,7 @@ function HomeStack() {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="Group" component={GroupStack} />
+            <Stack.Screen name="GroupStack" component={GroupStack} />
         </Stack.Navigator>
     );
 }
@@ -45,11 +47,28 @@ function GroupStack() {
 }
 
 export default function App() {
+    useEffect(() => {
+        (async () => {
+            let { status } = await Location.requestForegroundPermissionsAsync();
+            if (status !== 'granted') {
+                console.log('Permission to access location was denied');
+                return;
+            }
+
+            let location = await Location.getCurrentPositionAsync({});
+            console.log(location);
+
+            Location.watchPositionAsync({ timeInterval: 1000, distanceInterval: 0.1 }, (location) => {
+                console.log(location);
+            });
+        })();
+    }, []);
+
     return (
         <NavigationContainer>
             <Tab.Navigator screenOptions={{ headerShown: false }}>
-                <Tab.Screen name="Home" component={HomeStack} />
-                <Tab.Screen name="Friends" component={FriendsStack} />
+                <Tab.Screen name="HomeStack" component={HomeStack} />
+                <Tab.Screen name="FriendsStack" component={FriendsStack} />
             </Tab.Navigator>
         </NavigationContainer>
     );

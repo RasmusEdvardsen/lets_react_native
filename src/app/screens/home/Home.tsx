@@ -4,7 +4,7 @@ export default function Home({ navigation }: any) {
   return (
     <View style={styles.container}>
       <Text>Home Page</Text>
-      <Button title="Go to Group" onPress={() => navigation.navigate('Group')} />
+      <Button title="Go to Group" onPress={() => navigation.navigate('GroupStack')} />
     </View>
   );
 }
