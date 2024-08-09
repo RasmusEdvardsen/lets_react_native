@@ -1,9 +1,9 @@
 import { Text, View, StyleSheet } from "react-native";
 
-export default function Profile() {
+export default function Profile({ route }: any) {
   return (
     <View style={styles.container}>
-      <Text>Friend Page</Text>
+      <Text>Friend Page {route.params.id} {route.params.name}</Text>
     </View>
   );
 }
