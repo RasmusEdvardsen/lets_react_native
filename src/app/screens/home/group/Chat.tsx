@@ -1,9 +1,9 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function Login() {
+export default function Chat() {
   return (
     <View style={styles.container}>
-      <Text>Login/Signup Page</Text>
+      <Text>Chat Page</Text>
     </View>
   );
 }

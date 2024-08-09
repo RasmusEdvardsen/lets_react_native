@@ -1,9 +1,9 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function Group() {
+export default function Map() {
   return (
     <View style={styles.container}>
-      <Text>Group Page</Text>
+      <Text>Map Page</Text>
     </View>
   );
 }

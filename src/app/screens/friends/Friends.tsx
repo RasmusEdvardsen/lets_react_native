@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 export default function Friends({ navigation }: any) {
   return (
     <View style={styles.container}>
-      <Text>Friends List Page</Text>
+      <Text>Friends Page</Text>
       <Button title="Go to Profile" onPress={() => navigation.navigate('Profile')} />
     </View>
   );
