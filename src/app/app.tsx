@@ -36,12 +36,14 @@ function HomeStack() {
     );
 }
 
-function GroupStack() {
+function GroupStack({ route }: any) {
+    let params = route.params;
+
     return (
         <TopTab.Navigator>
-            <TopTab.Screen name="Map" component={Map} />
-            <TopTab.Screen name="Chat" component={Chat} />
-            <TopTab.Screen name="Participant" component={Participants} />
+            <TopTab.Screen name="Map" component={Map} initialParams={params} />
+            <TopTab.Screen name="Chat" component={Chat} initialParams={params} />
+            <TopTab.Screen name="Participant" component={Participants} initialParams={params} />
         </TopTab.Navigator>
     )
 }

@@ -1,9 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Map() {
+export default function Map({ route }: any) {
+
   return (
     <View style={styles.container}>
-      <Text>Map Page</Text>
+      <Text>Map page for group with id {route.params.id}</Text>
     </View>
   );
 }
