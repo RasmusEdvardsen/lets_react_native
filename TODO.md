@@ -8,3 +8,5 @@
     - Try get android phone and also get mac to run on both devices.
 * Try to declutter expo and eas as much as possible (try minimal template and copy in to repo).
 * Annotate { navigation } with type other than any.
+* Need background location updates. If not active for more than 30 minutes, disable location updates.
+* Idea: No groups, just active with title ("Drinks at Ofelia's"), Friends tab becomes Chat/Friends tab. would be easier to implement.
