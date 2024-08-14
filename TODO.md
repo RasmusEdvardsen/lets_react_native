@@ -4,12 +4,15 @@
 * Redux for state management? Look in state management immediately after UI design done.
 * Implement chat page and map page (need android phone for map page).
 * Implement login page (and redirecting to login page if not logged in).
-* Try run on android and iOS devices
-    - Try get android phone and also get mac to run on both devices.
+    - Either [expo authentication](https://docs.expo.dev/router/reference/authentication/) or [react navigation authentication](https://reactnavigation.org/docs/auth-flow/)
+* Try run on iOS device (need mac).
 * Try to declutter expo and eas as much as possible (try minimal template and copy in to repo).
 * Annotate { navigation } with type other than any.
 * Need background location updates. If not active for more than 30 minutes, disable location updates.
 * Idea: No groups, just active with title ("Drinks at Ofelia's"), Friends tab becomes Chat/Friends tab. would be easier to implement.
+* Firebase or Supabase?
+    - Firebase: More mature, more features, more expensive, more complex.
+    - Supabase: More simple, more modern, more open source, more free.
 
 # Release:
 ## Google Maps SDK
