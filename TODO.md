@@ -10,3 +10,7 @@
 * Annotate { navigation } with type other than any.
 * Need background location updates. If not active for more than 30 minutes, disable location updates.
 * Idea: No groups, just active with title ("Drinks at Ofelia's"), Friends tab becomes Chat/Friends tab. would be easier to implement.
+
+# Release:
+## Google Maps SDK
+* Maps SDK uses expo development build debug keystore. For release, go through this, but for google play store instead: https://docs.expo.dev/versions/latest/sdk/map-view/

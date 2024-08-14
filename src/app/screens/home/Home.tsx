@@ -1,7 +1,9 @@
 import { Group } from "@/src/models/Group";
 import { Text, View, StyleSheet, Button, FlatList } from "react-native";
+import MapView from 'react-native-maps';
+import { PROVIDER_GOOGLE } from 'react-native-maps';
 
-export default function Home({ navigation }: any) {
+export default function Home() {
   let groups: Group[] = [
     { id: 69 },
     { id: 420 },
@@ -10,11 +12,7 @@ export default function Home({ navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <Text>Home Page</Text>
-      <FlatList
-        data={groups}
-        renderItem={
-          ({ item }) => <Button title="Go to Profile" onPress={() => navigation.navigate('GroupStack', item)} />} />
+      <MapView style={styles.map} provider={PROVIDER_GOOGLE} />
     </View>
   );
 }
@@ -22,7 +20,9 @@ export default function Home({ navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
   },
-})
+  map: {
+    width: '100%',
+    height: '100%',
+  },
+});

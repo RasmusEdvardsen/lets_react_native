@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Chat() {
+export default function Chat({ route }: any) {
   return (
     <View style={styles.container}>
-      <Text>Chat Page</Text>
+      <Text>Chat Page {route.params.id} {route.params.name}</Text>
     </View>
   );
 }

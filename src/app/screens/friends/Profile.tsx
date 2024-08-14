@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Profile({ route }: any) {
   return (
     <View style={styles.container}>
-      <Text>Friend Page {route.params.id} {route.params.name}</Text>
+      <Text>Profile Page {route.params.id} {route.params.name}</Text>
     </View>
   );
 }

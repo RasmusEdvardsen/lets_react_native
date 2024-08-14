@@ -21,7 +21,12 @@
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.rasmusedvardsen.lets"
+      "package": "com.rasmusedvardsen.lets",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD1xDmNVJQL3g_p-HzFD6Z1G_rcVd1Pgzs"
+        }
+      }
     },
     "web": {
       "bundler": "metro",

@@ -14,7 +14,7 @@ export default function Friends({ navigation }: any) {
       <FlatList 
         data={friends}
         renderItem={
-          ({item}) => <Button title="Go to Profile" onPress={() => navigation.navigate('Profile', item)} />} />
+          ({item}) => <Button title="Go to chat" onPress={() => navigation.navigate('Chat', item)} />} />
     </View>
   );
 }

@@ -4,8 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import * as Location from 'expo-location';
-
 import Friends from './screens/friends/Friends';
 import Profile from './screens/friends/Profile';
 
@@ -22,7 +20,7 @@ function FriendsStack() {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Friends" component={Friends} />
-            <Stack.Screen name="Profile" component={Profile} />
+            <Stack.Screen name="Chat" component={Chat} />
         </Stack.Navigator>
     );
 };
@@ -31,7 +29,6 @@ function HomeStack() {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="GroupStack" component={GroupStack} />
         </Stack.Navigator>
     );
 }
@@ -49,22 +46,23 @@ function GroupStack({ route }: any) {
 }
 
 export default function App() {
-    useEffect(() => {
-        (async () => {
-            let { status } = await Location.requestForegroundPermissionsAsync();
-            if (status !== 'granted') {
-                console.log('Permission to access location was denied');
-                return;
-            }
+    // todo: move to location.ts
+    // useEffect(() => {
+    //     (async () => {
+    //         let { status } = await Location.requestForegroundPermissionsAsync();
+    //         if (status !== 'granted') {
+    //             console.log('Permission to access location was denied');
+    //             return;
+    //         }
 
-            let location = await Location.getCurrentPositionAsync({});
-            console.log(location);
+    //         let location = await Location.getCurrentPositionAsync({});
+    //         console.log(location);
 
-            Location.watchPositionAsync({ timeInterval: 1000, distanceInterval: 0.1 }, (location) => {
-                console.log(location);
-            });
-        })();
-    }, []);
+    //         Location.watchPositionAsync({ timeInterval: 1000, distanceInterval: 0.1 }, (location) => {
+    //             console.log(location);
+    //         });
+    //     })();
+    // }, []);
 
     return (
         <NavigationContainer>
