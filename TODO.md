@@ -15,6 +15,6 @@
     - Firebase: More mature, more features, more expensive, more complex.
     - Supabase: More simple, more modern, more open source, more free.
 
-# Release:
+# Release
 ## Google Maps SDK
 * Maps SDK uses expo development build debug keystore. For release, go through this, but for google play store instead: https://docs.expo.dev/versions/latest/sdk/map-view/

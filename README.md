@@ -51,3 +51,6 @@ Join our community of developers creating universal apps.
 
 ## Additional resources
 [Google Maps Project](https://console.cloud.google.com/google/maps-apis/home?project=lets-432515)
+
+## Gotchas
+Just update packages, whenever cli prompts new versions are available.
