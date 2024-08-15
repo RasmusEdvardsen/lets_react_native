@@ -14,6 +14,7 @@
 * Firebase or Supabase?
     - Firebase: More mature, more features, more expensive, more complex.
     - Supabase: More simple, more modern, more open source, more free.
+* 'Go live' FAB.
 
 # Release
 ## Google Maps SDK
