@@ -2,7 +2,9 @@
 * Do full UI design before integrating to firebase/supabase, and geo.
     - Use dummy data and timeouts to mock changes to subscribe to.
 * Redux for state management? Look in state management immediately after UI design done.
-* Implement chat page and map page (need android phone for map page).
+* Implement map page.
+* Implement chat page.
+    - getstream.io for chat ui inspiration?
 * Implement login page (and redirecting to login page if not logged in).
     - Either [expo authentication](https://docs.expo.dev/router/reference/authentication/) or [react navigation authentication](https://reactnavigation.org/docs/auth-flow/)
 * Try run on iOS device (need mac).
