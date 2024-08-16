@@ -3,6 +3,8 @@
     - Use dummy data and timeouts to mock changes to subscribe to.
 * Redux for state management? Look in state management immediately after UI design done.
 * Implement map page.
+    * 'Go live' FAB only on map page.
+    * Pop up animation on markers of friends and self.
 * Implement chat page.
     - getstream.io for chat ui inspiration?
 * Implement login page (and redirecting to login page if not logged in).
@@ -16,7 +18,6 @@
 * Firebase or Supabase?
     - Firebase: More mature, more features, more expensive, more complex.
     - Supabase: More simple, more modern, more open source, more free.
-* 'Go live' FAB.
 
 # Release
 ## Google Maps SDK
