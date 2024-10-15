@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import Friends from './screens/friends/Friends';
-import Profile from './screens/friends/Profile';
 
 import Home from './screens/home/Home';
+
 import Chat from './screens/home/group/Chat';
 import Participants from './screens/home/group/Participants';
 import Map from './screens/home/group/Map';
@@ -46,24 +46,6 @@ function GroupStack({ route }: any) {
 }
 
 export default function App() {
-    // todo: move to location.ts
-    // useEffect(() => {
-    //     (async () => {
-    //         let { status } = await Location.requestForegroundPermissionsAsync();
-    //         if (status !== 'granted') {
-    //             console.log('Permission to access location was denied');
-    //             return;
-    //         }
-
-    //         let location = await Location.getCurrentPositionAsync({});
-    //         console.log(location);
-
-    //         Location.watchPositionAsync({ timeInterval: 1000, distanceInterval: 0.1 }, (location) => {
-    //             console.log(location);
-    //         });
-    //     })();
-    // }, []);
-
     return (
         <NavigationContainer>
             <Tab.Navigator screenOptions={{ headerShown: false }}>
